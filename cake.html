@@ -1,0 +1,224 @@
+<!-- DEVELOPER: Yusra Mohammad Amin, IS117-007, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes - Sweet Delights Bakery</title>
+
+    <!-- 1. BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Georgia', serif;
+            background-color: antiquewhite;
+        }
+
+        .web-title {
+            padding-left: 10px;
+            color: aliceblue;
+        }
+
+        .custom-header {
+            background: linear-gradient(90deg, #473824 0%, #473824 100%);
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            color: #473824 !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control-custom {
+            border-radius: 20px;
+            border: 2px solid white;
+            width: 60%;
+            text-align: center;
+            color: #473824;
+        }
+
+        .form-control-custom::img {
+            color: #473824;
+            font-weight: bold;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #473824;
+            font-size: 3.5rem;
+            margin: 40px 0;
+            font-weight: bold;
+        }
+
+        .cake-item {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cake-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            flex-shrink: 0;
+
+        }
+
+        .cake-details {
+            margin-left: 30px;
+            width: 100%;
+        }
+
+        .cake-name {
+            font-size: 2rem;
+            color: #473824;
+            margin-bottom: 10px;
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .cake-description {
+            font-size: 1.2rem;
+            color: #473824;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* --- FOOTER CSS --- */
+        .footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #473824;
+            color: #473824;
+            text-align: right;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .cake-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cake-details {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 3. NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg custom-header">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4"></a> <img src="images/photo_2025-11-25_14-14-35.jpg" width="70" , height="70">
+            <h1 class="web-title">Desserts</h1>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home Page</a>
+                    </li>
+
+                    <!-- DROPDOWN MENU -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cake.html">Cakes</a></li>
+                            <li><a class="dropdown-item" href="pastries.html">Pastries</a></li>
+                            <li><a class="dropdown-item" href="breads.html">Bread</a></li>
+                            <li><a class="dropdown-item" href="icecreams.html">Ice Cream</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 4. MAIN CONTENT -->
+    <div class="container">
+        <h1 class="page-title">Cakes</h1>
+
+        <!-- ITEM 1 -->
+        <div class="cake-item">
+            <div><img src="images/photo_2025-11-20_22-17-59.jpg" width="200" height="200"></div>
+            <div class="cake-details">
+                <h2 class="cake-name">Wedding Cake</h2>
+                <p class="cake-description">A timeless masterpiece, this four-tier vanilla bean cake is wrapped
+                    in smooth white fondant and draped with cascading fresh roses. Inside, layers of light,
+                    airy sponge meet a tart raspberry preserve and silky
+                    Swiss meringue buttercream for a bite that is as elegant as it is delicious.</p>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="cake-item">
+            <div><img src="images/photo_2025-11-20_22-17-53.jpg" width="200" height="200"></div>
+            <div class="cake-details">
+                <h2 class="cake-name">Caramel Cake</h2>
+                <p class="cake-description">Embracing warm and comforting flavors, this golden caramel cake is studded
+                    with toasted pecans for a delightful crunch. It is layered with a light cinnamon-spiced cream cheese
+                    frosting and finished with a semi-naked scrape, creating a rustic look that tastes like a cozy
+                    embrace.</p>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="cake-item">
+            <div><img src="images/photo_2025-11-20_22-18-02.jpg" width="200" height="200"></div>
+            <div class="cake-details">
+                <h2 class="cake-name">Napoleon Cake</h2>
+                <p class="cake-description">A sophisticated tribute to French patisserie, this classic Napoleon cake
+                    is a masterpiece of texture. It features countless layers of shatteringly crisp, buttery puff pastry
+                    alternating with cool, velvety vanilla bean crème pâtissière. Topped with a traditional marbled
+                    fondant
+                    glaze, it offers a delicate crunch and a creamy finish in every bite.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 5. FOOTER -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <span class="text-muted">
+                <a href="#" style="color: #473824; text-decoration: none; margin-right: 15px;">Terms of Use</a>
+                <a href="#" style="color: #473824; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+                &copy; 2025 Yusra Mohammad Amin
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
